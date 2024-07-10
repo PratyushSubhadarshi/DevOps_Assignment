@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details By Entering ID Between 1 to 10</title>
+</head>
+<body>
+    <h2>Search Student</h2>
+    <form id="searchStudentForm">
+        <label for="searchId">Search by ID:</label>
+        <input type="text" id="searchId" name="searchId" required>
+        <button type="submit">Search</button>
+    </form>
+
+    <script>
+        // Function to handle student search
+        document.getElementById('searchStudentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const searchId = document.getElementById('searchId').value;
+
+            // Open a new tab/window with the JSON response
+            window.open(`/student/${searchId}`);
+        });
+    </script>
+</body>
+</html>
