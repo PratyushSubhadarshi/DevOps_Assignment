@@ -73,7 +73,18 @@ USER: Sets the user context for subsequent instructions. Here, USER pratyush swi
 ### CMD ["node", "server.js"]
 CMD: Specifies the command to run when the container starts. In this case, node server.js starts the Node.js application named server.js using the Node.js runtime installed in the Docker image.
 
-## To check our container is running on NONPRIVILLAGE mode or not we will execute some commands
+# Docker Run Command
+
+docker run: This command is used to create and start a new Docker container.
+
+-d: This flag stands for "detached" mode, which means the container runs in the background.
+
+-p 3000:3000: This flag publishes (or maps) port 3000 from the container to port 3000 on the host machine.
+
+myserverapp: This is the name or ID of the Docker image that we want to use to create the container.
+
+
+# To check our container is running on NONPRIVILLAGE mode or not we will execute some commands
 
 ![Mode check](https://github.com/PratyushSubhadarshi/DevOps_Assignment/assets/119421621/ac79ded0-d5d2-47ed-92be-3dd2bb2b3658)
 
