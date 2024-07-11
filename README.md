@@ -92,12 +92,12 @@ docker run: This command is used to create and start a new Docker container.
 myserverapp: This is the name of the Docker image that we want to use to create the container.
 
 
-# To check our container is running on NONPRIVILLAGE mode or not we will execute some commands
+# To check our container is running on NONPRIVILEGED mode or not we will execute some commands
 
 ![Mode check](https://github.com/PratyushSubhadarshi/DevOps_Assignment/assets/119421621/ac79ded0-d5d2-47ed-92be-3dd2bb2b3658)
 
     1.First we used docker ps command to check if the container is running or not and to get the container id.
     2.We logged into the user pratyush by using docker exec command.
-    3.But when we tried to change into root directory the permission is denied as it is running on NONPRIVILLAGE mode.
+    3.But when we tried to change into root directory the permission is denied as it is running on NONPRIVILEGED mode.
 
 ## We have successfully created the webserver and Dockerized it.
