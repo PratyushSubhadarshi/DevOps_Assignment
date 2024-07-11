@@ -3,15 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Details By Entering ID Between 1 to 10</title>
+    <title>Student Details</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            text-align: center;
+            background-color: #f0f8ff; /* Light blue color */
+        }
+        #searchStudentForm {
+            margin: 20px 0;
+        }
+        input[type="text"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button[type="submit"] {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #008CBA; /* New background color for search button */
+            color: white;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #005A80; /* Hover color for search button */
+        }
+        .student-links {
+            display: grid;
+            grid-template-columns: repeat(5, auto);
+            grid-gap: 10px;
+            margin-top: 20px;
+        }
+        .student-links a {
+            display: block;
+            text-align: center;
+            padding: 5px;
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h2>Search Student</h2>
+    <h2>Search Student Using ID (1-10)</h2>
     <form id="searchStudentForm">
         <label for="searchId">Search by ID:</label>
         <input type="text" id="searchId" name="searchId" required>
         <button type="submit">Search</button>
     </form>
+    <div class="student-links">
+        <a href="/student/1">Student 1</a>
+        <a href="/student/2">Student 2</a>
+        <a href="/student/3">Student 3</a>
+        <a href="/student/4">Student 4</a>
+        <a href="/student/5">Student 5</a>
+        <a href="/student/6">Student 6</a>
+        <a href="/student/7">Student 7</a>
+        <a href="/student/8">Student 8</a>
+        <a href="/student/9">Student 9</a>
+        <a href="/student/10">Student 10</a>
+    </div>
 
     <script>
         // Function to handle student search
