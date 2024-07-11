@@ -9,7 +9,14 @@ First we started by creating server.js and index.html files to create our webser
 
     3.we install express and run the server to access it from localhost:3000.
 
-## Containers vs Virtual Machine 
+## Commands Used to create and Run the webserver
+
+```  
+    npm install
+    npm init -y
+    npm install express
+    node server.js
+```
 
 
 
