@@ -39,6 +39,11 @@ The website is used to show the student details.By searching the student by id i
     docker run -d -p 3000:3000 myserverapp
     docker ps //to show the running containers
 
+## Explaining The Dockerfile
+
+### FROM node:14 
+FROM: Specifies the base image for this Docker image. node:14 indicates that this Docker image is built on top of the official Node.js image version 14, which provides Node.js runtime and npm.
+
 ### To check our container is running on NONPRIVILLAGE mode or not we will execute some commands
 
 ![Mode check](https://github.com/PratyushSubhadarshi/DevOps_Assignment/assets/119421621/ac79ded0-d5d2-47ed-92be-3dd2bb2b3658)
