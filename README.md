@@ -39,14 +39,9 @@ The website is used to show the student details.By searching the student by id w
     docker run -d -p 3000:3000 myserverapp
     docker ps //to show the running containers
 
+### To check our container is running on NONPRIVILLAGE mode or not we will execute some commands
 
-
-
-### Docker Architecture ?
-
-![image](https://user-images.githubusercontent.com/43399466/217507877-212d3a60-143a-4a1d-ab79-4bb615cb4622.png)
-
-The above picture, clearly indicates that Docker Deamon is brain of Docker. If Docker Deamon is killed, stops working for some reasons, Docker is brain dead :p (sarcasm intended).
+![Mode check](https://github.com/PratyushSubhadarshi/DevOps_Assignment/assets/119421621/ac79ded0-d5d2-47ed-92be-3dd2bb2b3658)
 
 ### Docker LifeCycle 
 
