@@ -20,11 +20,10 @@ First we started by creating server.js and index.html files to create our webser
 ## Now The Server is running
 ![FrontPage of Server](https://github.com/PratyushSubhadarshi/DevOps_Assignment/assets/119421621/440462bf-7efe-4817-9306-339270a27159)
 
-1.The website is used to show the student details.
-2.By searching the student by id we can search it in the search box.
-3.or we can diretcly click on the student boxes given below to directly access the details.
-4.The output the search will be given in JSON format. 
+The website is used to show the student details.By searching the student by id we can search it in the search box.Or we can diretcly click on the student boxes given below to directly access the details.The output the search will be given in JSON format. 
 
+## Output Of The Search
+![Json Output](https://github.com/PratyushSubhadarshi/DevOps_Assignment/assets/119421621/02e58dd5-9788-4f60-bc30-40fdec45bd69)
 
 
 ### Files and Folders that containers use from host operating system
