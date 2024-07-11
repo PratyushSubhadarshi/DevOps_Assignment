@@ -17,8 +17,8 @@ First we started by creating server.js and index.html files to create our webser
     npm install express
     node server.js
 ```
-
-
+# Now The Server is running
+![FrontPage of Server](https://github.com/PratyushSubhadarshi/DevOps_Assignment/assets/119421621/440462bf-7efe-4817-9306-339270a27159)
 
 ### Files and Folders in containers base images
 
