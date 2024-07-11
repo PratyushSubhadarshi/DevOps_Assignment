@@ -1,8 +1,12 @@
 # DevOps_Assignment
 
 ## Creating The Webserver
-First we started by creating server.js and index.html files to create our webserver. 
-  1.
+First we started by creating server.js and index.html files to create our webserver:
+    1.we write the package.json file to mention required modules to install.
+
+    2.we run the npm install command which will install required node modules for the server to run.
+
+    3.we install express and run the server to access it from localhost:3000.
 
 ## Containers vs Virtual Machine 
 
@@ -14,7 +18,7 @@ Containers and virtual machines are both technologies used to isolate applicatio
 
     3. Security: VMs provide a higher level of security as each VM has its own operating system and can be isolated from the host and other VMs. Containers provide less isolation, as they share the host operating system.
 
-   4.  Management: Managing containers is typically easier than managing VMs, as containers are designed to be lightweight and fast-moving.
+    4.  Management: Managing containers is typically easier than managing VMs, as containers are designed to be lightweight and fast-moving.
 
 
 
