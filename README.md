@@ -17,26 +17,13 @@ First we started by creating server.js and index.html files to create our webser
     npm install express
     node server.js
 ```
-# Now The Server is running
+## Now The Server is running
 ![FrontPage of Server](https://github.com/PratyushSubhadarshi/DevOps_Assignment/assets/119421621/440462bf-7efe-4817-9306-339270a27159)
 
-### Files and Folders in containers base images
-
-```
-    /bin: contains binary executable files, such as the ls, cp, and ps commands.
-
-    /sbin: contains system binary executable files, such as the init and shutdown commands.
-
-    /etc: contains configuration files for various system services.
-
-    /lib: contains library files that are used by the binary executables.
-
-    /usr: contains user-related files and utilities, such as applications, libraries, and documentation.
-
-    /var: contains variable data, such as log files, spool files, and temporary files.
-
-    /root: is the home directory of the root user.
-```
+1.The website is used to show the student details.
+2.By searching the student by id we can search it in the search box.
+3.or we can diretcly click on the student boxes given below to directly access the details.
+4.The output the search will be given in JSON format. 
 
 
 
