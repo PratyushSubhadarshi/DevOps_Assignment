@@ -37,7 +37,7 @@ First we started by creating server.js and index.html files to create our webser
 
 ```
     1.We will start by writing the Dockerfile.
-    2.As mentioned we will run the conatiner on NONPRIVILLAGED mode,so we will write our script accordingly.
+    2.As mentioned we will run the conatiner on NONPRIVILEGED mode,so we will write our script accordingly.
 ```
 
 # Explaining The Dockerfile
