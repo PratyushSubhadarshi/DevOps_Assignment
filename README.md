@@ -33,12 +33,6 @@ The website is used to show the student details.By searching the student by id i
     2.As mentioned we will run the conatiner on NONPRIVILLAGED mode,so we will write our script accordingly.
 ```
 
-## Docker Commands To Execute
-      
-    docker build -t myserverapp .
-    docker run -d -p 3000:3000 myserverapp
-    docker ps //to show the running containers
-
 # Explaining The Dockerfile
 
 ### FROM node:14 
@@ -72,6 +66,12 @@ USER: Sets the user context for subsequent instructions. Here, USER pratyush swi
 
 ### CMD ["node", "server.js"]
 CMD: Specifies the command to run when the container starts. In this case, node server.js starts the Node.js application named server.js using the Node.js runtime installed in the Docker image.
+
+## Docker Commands To Execute
+      
+    docker build -t myserverapp .
+    docker run -d -p 3000:3000 myserverapp
+    docker ps //to show the running containers
 
 # Docker Run Command
 
