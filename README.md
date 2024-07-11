@@ -43,21 +43,11 @@ The website is used to show the student details.By searching the student by id w
 
 ![Mode check](https://github.com/PratyushSubhadarshi/DevOps_Assignment/assets/119421621/ac79ded0-d5d2-47ed-92be-3dd2bb2b3658)
 
-### Docker LifeCycle 
-
-We can use the above Image as reference to understand the lifecycle of Docker.
-
-There are three important things,
-
-1. docker build -> builds docker images from Dockerfile
-2. docker run   -> runs container from docker images
-3. docker push  -> push the container image to public/private regestries to share the docker images.
-
-![Screenshot 2023-02-08 at 4 32 13 PM](https://user-images.githubusercontent.com/43399466/217511949-81f897b2-70ee-41d1-b229-38d0572c54c7.png)
+    1.First we used docker ps command to check if the continer is running or not and to get the container id.
+    2.We logged into the user pratyush by using docker exec command.
+    3.But when we tried to change into root directory the permission is denied as it is running on NONPRIVILLAGE mode.
 
 
-
-### Understanding the terminology (Inspired from Docker Docs)
 
 
 #### Docker daemon
