@@ -20,7 +20,7 @@ First we started by creating server.js and index.html files to create our webser
 ## Now The Server is running
 ![FrontPage of Server](https://github.com/PratyushSubhadarshi/DevOps_Assignment/assets/119421621/440462bf-7efe-4817-9306-339270a27159)
 
-The website is used to show the student details.By searching the student by id in the search box.Or we can diretcly click on the student boxes given below to directly access the details.The output the search will be given in JSON format. 
+The website is used to show the student details.By searching the student by id in the search box.Or we can click on the student boxes given below to directly access the details.The output the search will be given in JSON format. 
 
 ## Output Of The Search
 ![Json Output](https://github.com/PratyushSubhadarshi/DevOps_Assignment/assets/119421621/02e58dd5-9788-4f60-bc30-40fdec45bd69)
@@ -36,18 +36,18 @@ The website is used to show the student details.By searching the student by id i
 # Explaining The Dockerfile
 
 ### FROM node:14 
-FROM: Specifies the base image for this Docker image. node:14 indicates that this Docker image is built on top of the official Node.js image version 14, which provides Node.js runtime and npm.
+FROM: Specifies the base image for this Docker image. node:14 indicates that this Docker image is built on top of the official Node.js image version 14.
 
 ### RUN useradd -m -r pratyush
 RUN: Executes a command during the image build process. Here, useradd -m -r pratyush creates a new user named pratyush with the options:
--m: Creates a home directory for the user.
--r: Creates a system user (non-interactive) with no password and no home directory created.
+    -m: Creates a home directory for the user.
+    -r: Creates a system user with no password and no home directory created.
 
 ### WORKDIR /server
 WORKDIR: Sets the working directory for subsequent instructions in the Dockerfile. Here, /server is set as the working directory inside the container.
 
 ### COPY package*.json ./
-COPY: Copies files or directories from the host filesystem into the Docker image. This line copies package.json and package-lock.json (if it exists) from the host's current directory into the /server directory of the Docker image.
+COPY: Copies files or directories from the host filesystem into the Docker image. This line copies package.json and package-lock.json from the host's current directory into the /server directory of the Docker image.
 
 ### RUN npm install --unsafe-perm
 RUN: Executes a command during the image build process. Here, npm install --unsafe-perm installs Node.js dependencies defined in package.json. The --unsafe-perm flag is used to ensure npm runs scripts with root privileges (since pratyush is not a root user).
@@ -62,7 +62,7 @@ RUN: Executes a command during the image build process. chown -R pratyush /serve
 EXPOSE: Informs Docker that the container listens on the specified network ports at runtime. Here, EXPOSE 3000 exposes port 3000 on the container.
 
 ### USER pratyush
-USER: Sets the user context for subsequent instructions. Here, USER pratyush switches the user context to pratyush for running subsequent commands and the application inside the container.
+USER: Here, USER pratyush switches the user context to pratyush for running subsequent commands and the application inside the container.
 
 ### CMD ["node", "server.js"]
 CMD: Specifies the command to run when the container starts. In this case, node server.js starts the Node.js application named server.js using the Node.js runtime installed in the Docker image.
@@ -81,7 +81,7 @@ docker run: This command is used to create and start a new Docker container.
 
 -p 3000:3000: This flag publishes (or maps) port 3000 from the container to port 3000 on the host machine.
 
-myserverapp: This is the name or ID of the Docker image that we want to use to create the container.
+myserverapp: This is the name of the Docker image that we want to use to create the container.
 
 
 # To check our container is running on NONPRIVILLAGE mode or not we will execute some commands
