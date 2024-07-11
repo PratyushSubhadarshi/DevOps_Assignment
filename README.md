@@ -39,7 +39,8 @@ The website is used to show the student details.By searching the student by id i
 FROM: Specifies the base image for this Docker image. node:14 indicates that this Docker image is built on top of the official Node.js image version 14.
 
 ### RUN useradd -m -r pratyush
-RUN: Executes a command during the image build process. Here, useradd -m -r pratyush creates a new user named pratyush with the options:
+
+    RUN: Executes a command during the image build process. Here, useradd -m -r pratyush creates a new user named pratyush with the options:
     -m: Creates a home directory for the user.
     -r: Creates a system user with no password and no home directory created.
 
