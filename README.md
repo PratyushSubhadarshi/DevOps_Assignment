@@ -26,39 +26,20 @@ The website is used to show the student details.By searching the student by id w
 ![Json Output](https://github.com/PratyushSubhadarshi/DevOps_Assignment/assets/119421621/02e58dd5-9788-4f60-bc30-40fdec45bd69)
 
 
-### Files and Folders that containers use from host operating system
+# Now We Will Containerize The Webserver Using Docker  
 
 ```
-    The host's file system: Docker containers can access the host file system using bind mounts, which allow the container to read and write files in the host file system.
-
-    Networking stack: The host's networking stack is used to provide network connectivity to the container. Docker containers can be connected to the host's network directly or through a virtual network.
-
-    System calls: The host's kernel handles system calls from the container, which is how the container accesses the host's resources, such as CPU, memory, and I/O.
-
-    Namespaces: Docker containers use Linux namespaces to create isolated environments for the container's processes. Namespaces provide isolation for resources such as the file system, process ID, and network.
-
-    Control groups (cgroups): Docker containers use cgroups to limit and control the amount of resources, such as CPU, memory, and I/O, that a container can access.
-    
+    1.We will start by writing the Dockerfile.
+    2.As mentioned we will run the conatiner on NONPRIVILLAGED mode,so we will write our script accordingly.
 ```
 
-It's important to note that while a container uses resources from the host operating system, it is still isolated from the host and other containers, so changes to the container do not affect the host or other containers.
-
-**Note:** There are multiple ways to reduce your VM image size as well, but I am just talking about the default for easy comparision and understanding.
-
-so, in a nutshell, container base images are typically smaller compared to VM images because they are designed to be minimalist and only contain the necessary components for running a specific application or service. VMs, on the other hand, emulate an entire operating system, including all its libraries, utilities, and system files, resulting in a much larger size. 
-
-I hope it is now very clear why containers are light weight in nature.
+## Docker Commands To Execute
+      
+    docker build -t myserverapp .
+    docker run -d -p 3000:3000 myserverapp
+    docker ps //to show the running containers
 
 
-
-## Docker
-
-
-### What is Docker ?
-
-Docker is a containerization platform that provides easy way to containerize your applications, which means, using Docker you can build container images, run the images to create containers and also push these containers to container regestries such as DockerHub, Quay.io and so on.
-
-In simple words, you can understand as `containerization is a concept or technology` and `Docker Implements Containerization`.
 
 
 ### Docker Architecture ?
